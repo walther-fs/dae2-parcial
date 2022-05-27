@@ -13,6 +13,10 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>spring-boot-mvc</module>
+    </modules>
+
     <packaging>pom</packaging>
 
 </project>
