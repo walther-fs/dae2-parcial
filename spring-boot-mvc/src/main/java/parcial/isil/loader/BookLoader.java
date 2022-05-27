@@ -19,7 +19,6 @@ public class BookLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         Book book = new Book("8795462135821","ISIL","Walther Flores",2020,"Examen Parcial",27.59);
         jdbcBookRepository.save(book);
         log.info("book: {}", book);

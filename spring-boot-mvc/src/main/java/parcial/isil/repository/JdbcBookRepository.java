@@ -18,7 +18,7 @@ public class JdbcBookRepository implements BookRepository{
 
     @Override
     public void save(Book book) {
-        final String SQL = "insert into books (isbn, publisherName, authorName, years, title, price) values(?, ?, ?, ?, ?)";
+        final String SQL = "insert into books (isbn, publisherName, authorName, years, title, price) values(?, ?, ?, ?, ?, ?)";
         jdbcTemplate.update(SQL, book.getIsbn(), book.getPublisherName(), book.getAuthorName(), book.getYears(),book.getTitle(),book.getPrice());
     }
 
